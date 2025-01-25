@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahum's Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInDown">Hello, Ahum</h1>
+        <div class="input-container">
+            <label for="roll-number">Roll Number:</label>
+            <input type="text" id="roll-number" placeholder="Enter roll number" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+
+            <label for="pin">Pin:</label>
+            <input type="password" id="pin" placeholder="Enter pin" required>
+
+            <label for="class-select">Class:</label>
+            <select id="class-select" required>
+                <option value="all">All Classes</option>
+                <option value="Class 6">Class 6</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
+                <option value="Class 9">Class 9</option>
+                <option value="Class 10">Class 10</option>
+                <option value="Class 11">Class 11</option>
+                <option value="Class 12">Class 12</option>
+            </select>
+
+            <label for="term-select">Term:</label>
+            <select id="term-select" required>
+                <option value="all">All Terms</option>
+                <option value="1st">1st Term</option>
+                <option value="2nd">2nd Term</option>
+                <option value="3rd">3rd Term</option>
+            </select>
+
+            <label for="subject-select">Subject:</label>
+            <select id="subject-select" required>
+                <option value="all">All Subjects</option>
+                <option value="Bengali">Bengali</option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option value="Health and Physical Education">Health and Physical Education</option>
+            </select>
+
+            <button class="animate__animated animate__pulse" onclick="showResults()">Show Results</button>
+        </div>
+        <div id="results-container" class="animate__animated animate__fadeInUp"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
